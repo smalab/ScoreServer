@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class BottunClick : MonoBehaviour
+public class TestButtonClick : MonoBehaviour
 {
-    [SerializeField]
-    UnityEngine.Events.UnityEvent ev;
-
-    //シーンNodatest_２へ遷移
-    Application.LoadLevel("Nodatest_2")
-
-        }
+    public void ClickTest()
+    {
+        Debug.Log("Clicked.");
+    }
+}
