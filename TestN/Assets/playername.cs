@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class playername : MonoBehaviour {
-    string pn;
-	// Use this for initialization
-	void Start () {
-        pn = textsave.player();
-        pn.text = "";
+   // public GameObject pn;
+    public Text nametext;
+    // Use this for initialization
+    void Start () {
+        Debug.Log(textsave.player);
+        //nametext = pn.GetComponent<GUIText>();
+        nametext.text =textsave.player;
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+  
+    }
 }
