@@ -12,9 +12,4 @@ public class playername : MonoBehaviour {
         nametext.text =textsave.player;
         
     }
-	
-	// Update is called once per frame
-	void Update () {
-  
-    }
 }
