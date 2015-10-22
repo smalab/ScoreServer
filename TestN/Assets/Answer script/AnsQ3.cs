@@ -9,7 +9,7 @@ public class AnsQ3 : MonoBehaviour
     public Dropdown DropDown1;
     public Dropdown DropDown2;
 
-    public void Update()
+    public void start()
     {
         DropDown1 = GetComponent<Dropdown>();
         DropDown2 = GetComponent<Dropdown>();
@@ -19,6 +19,23 @@ public class AnsQ3 : MonoBehaviour
     {
         AnsQ3.q1 = DropDown1.value;
         AnsQ3.q2 = DropDown2.value;
+        if (AnsQ3.q1 == 2)
+        {
+            AnsQ3.q1 = 1;
+        }
+        else
+        {
+            AnsQ3.q1 = 0;
+        }
+
+        if (AnsQ3.q2 == 1)
+        {
+            AnsQ3.q2 = 1;
+        }
+        else
+        {
+            AnsQ3.q2 = 0;
+        }
         Debug.Log(AnsQ3.q1);
         Debug.Log(AnsQ3.q2);
     }

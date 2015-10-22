@@ -4,18 +4,18 @@ using System.Collections;
 
 public class getDropdown : MonoBehaviour {
     public static int player_grade;
-    public Dropdown DropDown ;
+    public Dropdown Dropdown;
 
-    public void Update()
+    public void start()
     {
-        DropDown = GetComponent<Dropdown>();
+        Dropdown = GetComponent<Dropdown>();
    
     }
 
     public void getDrop()
     {
         
-        getDropdown.player_grade = DropDown.value;
+        getDropdown.player_grade = Dropdown.value;
         Debug.Log(getDropdown.player_grade);
     }
 
