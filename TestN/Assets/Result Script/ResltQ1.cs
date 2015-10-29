@@ -13,6 +13,7 @@ public class ResltQ1 : MonoBehaviour {
         if (AnsQ1.q1 == 1)
         {
             ResQ1_1 = "〇";
+        
         }
         else
         {

@@ -18,24 +18,27 @@ public class AnsQ1 : MonoBehaviour
     public void getAns()
     {
         AnsQ1.q1 = DropDown1.value;
-        if (AnsQ1.q1 == 3)
+        AnsQ1.q2 = DropDown2.value;
+        if (AnsQ1.q1 == 4)
         {
             AnsQ1.q1 = 1;
+            TotalResult.T_ans++;
         }
         else
         {
             AnsQ1.q1 = 0;
         }
 
-        if(AnsQ1.q2 == 1)
+        if(AnsQ1.q2 == 2)
         {
             AnsQ1.q2 = 1;
+            TotalResult.T_ans++;
         }
         else
         {
             AnsQ1.q2 =0;
         }
-        AnsQ1.q2 = DropDown2.value;
+     
         Debug.Log(AnsQ1.q1);
         Debug.Log(AnsQ1.q2);
     }

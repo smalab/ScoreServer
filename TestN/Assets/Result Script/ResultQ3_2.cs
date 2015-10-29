@@ -14,6 +14,8 @@ public class ResultQ3_2 : MonoBehaviour
         if (AnsQ3.q2 == 1)
         {
             ResQ3_2 = "〇";
+            TotalResult.T_ans++;
+
         }
         else
         {

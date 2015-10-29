@@ -13,6 +13,7 @@ public class ResultQ3_1 : MonoBehaviour
         if (AnsQ3.q1 == 1)
         {
             ResQ3_1 = "〇";
+
         }
         else
         {

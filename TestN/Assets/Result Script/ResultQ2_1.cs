@@ -14,6 +14,7 @@ public class ResultQ2_1 : MonoBehaviour
         if (AnsQ2.q1 == 1)
         {
             ResQ2_1 = "〇";
+     
         }
         else
         {
