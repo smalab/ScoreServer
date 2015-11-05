@@ -8,13 +8,13 @@ public class AnsQ5 : MonoBehaviour
     public static int q2;
     public static int q3;
     public static int q4;
+
     public static int q5Ans=0;
 
     public Dropdown DropDown1;
     public Dropdown DropDown2;
     public Dropdown DropDown3;
     public Dropdown DropDown4;
-
 
     public void start()
 
