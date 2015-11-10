@@ -19,6 +19,9 @@ public class AnsQ2 : MonoBehaviour
     {
         AnsQ2.q1 = DropDown1.value;
         AnsQ2.q2 = DropDown2.value;
+
+		TotalResult.totalQ++;
+		TotalResult.totalQ++;
         if (AnsQ2.q1 == 1)
         {
             AnsQ2.q1 = 1;

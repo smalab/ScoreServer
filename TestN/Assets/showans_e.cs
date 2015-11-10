@@ -55,40 +55,41 @@ public class showans_e : MonoBehaviour {
 		} else {
 			ResQ1_5 = "×";
 		}
+
 		if (AnsQ2_e.q1 == 1) {
-			ResQ1_5 = "〇";
-		} else {
-			ResQ1_5 = "×";
-		}
-		if (AnsQ2_e.q2 == 1) {
 			ResQ1_6 = "〇";
 		} else {
 			ResQ1_6 = "×";
 		}
-		if (AnsQ2_e.q3 == 1) {
+		if (AnsQ2_e.q2 == 1) {
 			ResQ1_7 = "〇";
 		} else {
 			ResQ1_7 = "×";
 		}
-		if (AnsQ2_e.q4 == 1) {
+		if (AnsQ2_e.q3 == 1) {
 			ResQ1_8 = "〇";
 		} else {
 			ResQ1_8 = "×";
 		}
-		if (AnsQ3_e.q1 == 1) {
+		if (AnsQ2_e.q4 == 1) {
 			ResQ1_9 = "〇";
 		} else {
 			ResQ1_9 = "×";
 		}
-		if (AnsQ3_e.q2 == 1) {
+		if (AnsQ3_e.q1 == 1) {
 			ResQ2_1 = "〇";
 		} else {
 			ResQ2_1 = "×";
 		}
-		if (AnsQ4_e.q == 1) {
+		if (AnsQ3_e.q2 == 1) {
 			ResQ3_1 = "〇";
 		} else {
 			ResQ3_1 = "×";
+		}
+		if (AnsQ4_e.q == 1) {
+			ResQ4_1 = "〇";
+		} else {
+			ResQ4_1 = "×";
 		}
 
 		rltQ1_1.text = ResQ1_1;

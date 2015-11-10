@@ -28,10 +28,15 @@ public class AnsQ1_e : MonoBehaviour
 	public void getAns()
 	{
 		AnsQ1_e.q1 = DropDown1.value;
+		TotalResult.totalQ++;
 		AnsQ1_e.q2 = DropDown2.value;
+		TotalResult.totalQ++;
 		AnsQ1_e.q3 = DropDown3.value;
+		TotalResult.totalQ++;
 		AnsQ1_e.q4 = DropDown4.value;
+		TotalResult.totalQ++;
 		AnsQ1_e.q5 = DropDown5.value;
+		TotalResult.totalQ++;
 		if (q1 == 1)
 		{
 			q1 = 1;
@@ -79,8 +84,8 @@ public class AnsQ1_e : MonoBehaviour
 			q5 = 0;
 		}
 		
-		Debug.Log(AnsQ1.q1);
-		Debug.Log(AnsQ1.q2);
+		Debug.Log(q1);
+		Debug.Log(q2);
 	}
 	
 }

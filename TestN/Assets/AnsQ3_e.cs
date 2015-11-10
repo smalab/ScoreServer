@@ -18,7 +18,9 @@ public class AnsQ3_e : MonoBehaviour
 	public void getAns()
 	{
 		AnsQ3_e.q1 = DropDown1.value;
+		TotalResult.totalQ++;
 		AnsQ3_e.q2 = DropDown2.value;
+		TotalResult.totalQ++;
 		if (q1 == 5)
 		{
 			q1 = 1;

@@ -32,7 +32,7 @@ public class AnsQ5 : MonoBehaviour
         AnsQ5.q2 = DropDown2.value;
         AnsQ5.q3 = DropDown3.value;
         AnsQ5.q4 = DropDown4.value;
-
+		TotalResult.totalQ++;
         if (AnsQ5.q1==3&& AnsQ5.q2 ==4&& AnsQ5.q3 ==2 && AnsQ5.q4 ==2)
         {
             q5Ans =1;
