@@ -25,7 +25,7 @@ public class TotalResult : MonoBehaviour {
         success.text = Suc;
         rate.text = rat;
         Rank.text = ran;
-		Application.CaptureScreenshot("image.png");
+
 	}
 	
 }
