@@ -15,6 +15,10 @@ public class showans_e : MonoBehaviour {
 	public Text rltQ2_1;
 	public Text rltQ3_1;
 	public Text rltQ4_1;
+	public Text name;
+	public Text glade;
+
+	public string playername;
 	public string ResQ1_1;
 	public string ResQ1_2;
 	public string ResQ1_3;
@@ -30,6 +34,21 @@ public class showans_e : MonoBehaviour {
 
 	void Start()
 	{
+		playername = textsave.player;
+
+		name.text = playername;
+		if (textsave.glade == 0) {
+			glade.text="１年生";
+		}
+		if (textsave.glade == 1) {
+			glade.text="２年生";
+		}
+		if (textsave.glade == 2) {
+			glade.text="３年生";
+		}
+		if (textsave.glade == 3) {
+			glade.text="４年生";
+		}
 		if (AnsQ1_e.q1 == 1) {
 			ResQ1_1 = "〇";
 		} else {

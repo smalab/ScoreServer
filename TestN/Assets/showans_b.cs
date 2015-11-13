@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class showans_h : MonoBehaviour {
+public class showans_b : MonoBehaviour {
 	public Text rltQ1_1;
 	public Text rltQ1_2;
 	public Text rltQ2_1;
@@ -43,47 +43,47 @@ public class showans_h : MonoBehaviour {
 		if (textsave.glade == 3) {
 			glade.text="４年生";
 		}
-		if (AnsQ1_h.q1 == 1){
+		if (AnsQ1.q1 == 1){
 			ResQ1_1 = "〇";
 		} else {
 			ResQ1_1 = "×";
 		}
-		if (AnsQ1_h.q2 == 1) {
+		if (AnsQ1.q2 == 1) {
 			ResQ1_2 = "〇";
 		} else {
 			ResQ1_2 = "×";
 		}
-		if (AnsQ2_h.q1 == 1) {
+		if (AnsQ2.q1 == 1) {
 			ResQ2_1 = "〇";
 		} else {
 			ResQ2_1 = "×";
 		}
-		if (AnsQ2_h.q2 == 1) {
+		if (AnsQ2.q2 == 1) {
 			ResQ2_2 = "〇";
 		} else {
 			ResQ2_2 = "×";
 		}
-		if (AnsQ3_h.q1 == 1) {
+		if (AnsQ3.q1 == 1) {
 			ResQ3_1 = "〇";
 		} else {
 			ResQ3_1 = "×";
 		}
-		if (AnsQ3_h.q2 == 1) {
+		if (AnsQ3.q2 == 1) {
 			ResQ3_2 = "〇";
 		} else {
 			ResQ3_2 = "×";
 		}
-		if (AnsQ4_h.q1 == 1) {
+		if (AnsQ4.q1 == 1) {
 			ResQ4_1 = "〇";
 		} else {
 			ResQ4_1 = "×";
 		}
-		if (AnsQ4_h.q2 == 1) {
+		if (AnsQ4.q2 == 1) {
 			ResQ4_2 = "〇";
 		} else {
 			ResQ4_2 = "×";
 		}
-		if (AnsQ5_h.q == 1) {
+		if (AnsQ5.q5Ans == 1) {
 			ResQ5_1 = "〇";
 		} else {
 			ResQ5_1 = "×";
