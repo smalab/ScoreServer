@@ -18,13 +18,13 @@ public class AnsQ3_e : MonoBehaviour
 	public void getAns()
 	{
 		AnsQ3_e.q1 = DropDown1.value;
-		TotalResult.totalQ++;
+	
 		AnsQ3_e.q2 = DropDown2.value;
-		TotalResult.totalQ++;
+	
 		if (q1 == 5)
 		{
 			q1 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
@@ -34,7 +34,7 @@ public class AnsQ3_e : MonoBehaviour
 		if (q2 == 4)
 		{
 			q2 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{

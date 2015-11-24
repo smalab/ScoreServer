@@ -34,12 +34,12 @@ public class AnsQ5_h : MonoBehaviour
 		      q3 = DropDown3.value;
 			  q4 = DropDown4.value;
  			  q5 = DropDown5.value;
-		TotalResult.totalQ++;
+
 		
 		if (q1==3&&q2 ==4&&q3 ==4 && q4 ==2 && q5==5)
 		{
 			q =1;
-			TotalResult.T_ans++;
+
 		}
 
 	}

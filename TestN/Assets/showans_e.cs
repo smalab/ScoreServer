@@ -35,78 +35,91 @@ public class showans_e : MonoBehaviour {
 	void Start()
 	{
 		playername = textsave.player;
-
+		TotalResult.totalQ=12;
 		name.text = playername;
-		if (textsave.glade == 0) {
+		if (textsave.glade == 1) {
 			glade.text="１年生";
 		}
-		if (textsave.glade == 1) {
+		if (textsave.glade == 2) {
 			glade.text="２年生";
 		}
-		if (textsave.glade == 2) {
+		if (textsave.glade == 3) {
 			glade.text="３年生";
 		}
-		if (textsave.glade == 3) {
+		if (textsave.glade == 4) {
 			glade.text="４年生";
 		}
 		if (AnsQ1_e.q1 == 1) {
+
 			ResQ1_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_1 = "×";
 		}
 		if (AnsQ1_e.q2 == 1) {
 			ResQ1_2 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_2 = "×";
 		}
 		if (AnsQ1_e.q3 == 1) {
 			ResQ1_3 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_3 = "×";
 		}
 		if (AnsQ1_e.q4 == 1) {
 			ResQ1_4 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_4 = "×";
 		}
 		if (AnsQ1_e.q5 == 1) {
 			ResQ1_5 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_5 = "×";
 		}
 
 		if (AnsQ2_e.q1 == 1) {
 			ResQ1_6 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_6 = "×";
 		}
 		if (AnsQ2_e.q2 == 1) {
 			ResQ1_7 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_7 = "×";
 		}
 		if (AnsQ2_e.q3 == 1) {
 			ResQ1_8 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_8 = "×";
 		}
 		if (AnsQ2_e.q4 == 1) {
 			ResQ1_9 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_9 = "×";
 		}
 		if (AnsQ3_e.q1 == 1) {
 			ResQ2_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ2_1 = "×";
 		}
 		if (AnsQ3_e.q2 == 1) {
 			ResQ3_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ3_1 = "×";
 		}
 		if (AnsQ4_e.q == 1) {
 			ResQ4_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ4_1 = "×";
 		}

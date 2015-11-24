@@ -21,11 +21,11 @@ public class AnsQ4_e : MonoBehaviour
 		AnsQ4_e.q1 = DropDown1.value;
 	
 		AnsQ4_e.q2 = DropDown2.value;
-		TotalResult.totalQ++;
+	
 		if (q1 == 3 && q2==2)
 		{
 			q = 1;
-			TotalResult.T_ans++;
+		
 		}
 		else
 		{

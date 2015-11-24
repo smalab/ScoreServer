@@ -22,14 +22,14 @@ public class AnsQ4_h : MonoBehaviour
 	public void getAns()
 	{
 		q1 = DropDown1.value;
-		TotalResult.totalQ++;
+
 		q2 = DropDown2.value;
-		TotalResult.totalQ++;
+	
 		
 		if (q1 == 2)
 		{
 			q1 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
@@ -39,7 +39,7 @@ public class AnsQ4_h : MonoBehaviour
 		if (q2 == 1) 
 		{
 			q2 = 1;
-			TotalResult.T_ans++;
+
 		} 
 		else 
 		{

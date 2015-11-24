@@ -24,7 +24,7 @@ public class AnsQ3 : MonoBehaviour
         if (AnsQ3.q1 == 3)
         {
             AnsQ3.q1 = 1;
-            TotalResult.T_ans++;
+
         }
         else
         {
@@ -34,7 +34,7 @@ public class AnsQ3 : MonoBehaviour
         if (AnsQ3.q2 == 2)
         {
             AnsQ3.q2 = 1;
-            TotalResult.T_ans++;
+
         }
         else
         {

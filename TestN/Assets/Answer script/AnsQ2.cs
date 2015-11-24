@@ -25,7 +25,7 @@ public class AnsQ2 : MonoBehaviour
         if (AnsQ2.q1 == 1)
         {
             AnsQ2.q1 = 1;
-            TotalResult.T_ans++;
+
         }
         else
         {
@@ -35,7 +35,7 @@ public class AnsQ2 : MonoBehaviour
         if (AnsQ2.q2 == 5)
         {
             AnsQ2.q2 = 1;
-            TotalResult.T_ans++;
+
         }
         else
         {

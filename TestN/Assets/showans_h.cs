@@ -29,7 +29,7 @@ public class showans_h : MonoBehaviour {
 	void Start()
 	{
 		playername = textsave.player;
-
+		TotalResult.totalQ=9;
 		name.text = playername;
 		if (textsave.glade == 0) {
 			glade.text="１年生";
@@ -45,46 +45,55 @@ public class showans_h : MonoBehaviour {
 		}
 		if (AnsQ1_h.q1 == 1){
 			ResQ1_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_1 = "×";
 		}
 		if (AnsQ1_h.q2 == 1) {
 			ResQ1_2 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ1_2 = "×";
 		}
 		if (AnsQ2_h.q1 == 1) {
 			ResQ2_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ2_1 = "×";
 		}
 		if (AnsQ2_h.q2 == 1) {
 			ResQ2_2 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ2_2 = "×";
 		}
 		if (AnsQ3_h.q1 == 1) {
 			ResQ3_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ3_1 = "×";
 		}
 		if (AnsQ3_h.q2 == 1) {
 			ResQ3_2 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ3_2 = "×";
 		}
 		if (AnsQ4_h.q1 == 1) {
 			ResQ4_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ4_1 = "×";
 		}
 		if (AnsQ4_h.q2 == 1) {
 			ResQ4_2 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ4_2 = "×";
 		}
 		if (AnsQ5_h.q == 1) {
 			ResQ5_1 = "〇";
+			TotalResult.T_ans++;
 		} else {
 			ResQ5_1 = "×";
 		}

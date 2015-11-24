@@ -36,7 +36,7 @@ public class AnsQ5 : MonoBehaviour
         if (AnsQ5.q1==3&& AnsQ5.q2 ==4&& AnsQ5.q3 ==2 && AnsQ5.q4 ==2)
         {
             q5Ans =1;
-            TotalResult.T_ans++;
+
         }
         Debug.Log(AnsQ5.q1);
         Debug.Log(AnsQ5.q2);

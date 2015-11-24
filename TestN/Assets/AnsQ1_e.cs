@@ -28,19 +28,19 @@ public class AnsQ1_e : MonoBehaviour
 	public void getAns()
 	{
 		AnsQ1_e.q1 = DropDown1.value;
-		TotalResult.totalQ++;
+	
 		AnsQ1_e.q2 = DropDown2.value;
-		TotalResult.totalQ++;
+
 		AnsQ1_e.q3 = DropDown3.value;
-		TotalResult.totalQ++;
+
 		AnsQ1_e.q4 = DropDown4.value;
-		TotalResult.totalQ++;
+
 		AnsQ1_e.q5 = DropDown5.value;
-		TotalResult.totalQ++;
+
 		if (q1 == 1)
 		{
 			q1 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
@@ -50,7 +50,7 @@ public class AnsQ1_e : MonoBehaviour
 		if(q2 == 3)
 		{
 			q2 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
@@ -59,7 +59,7 @@ public class AnsQ1_e : MonoBehaviour
 		if (q3 == 1)
 		{
 			q3 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
@@ -68,7 +68,7 @@ public class AnsQ1_e : MonoBehaviour
 		if (q4 == 5)
 		{
 			q4 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
@@ -77,7 +77,7 @@ public class AnsQ1_e : MonoBehaviour
 		if (q5 == 2)
 		{
 			q5 = 1;
-			TotalResult.T_ans++;
+
 		}
 		else
 		{
