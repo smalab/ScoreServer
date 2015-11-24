@@ -15,7 +15,6 @@ public class textsave : MonoBehaviour {
     public void save () {
        textsave.player = inputField.text;
 		glade = DropDown1.value;
-        inputField.text = "";
         Debug.Log(textsave.player);
     }
     }

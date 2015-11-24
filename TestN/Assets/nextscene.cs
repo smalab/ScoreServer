@@ -17,8 +17,9 @@ public class nextscene : MonoBehaviour
 		}else{if (textsave.glade == 0) {
 					error="学年を入力してください。";
 				}
-				caution.text=error;
+
 			}
+			caution.text=error;
 		}
 
 	}}
