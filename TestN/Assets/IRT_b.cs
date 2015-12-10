@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class IRT_b: MonoBehaviour {
-	public Text maxIRT;
 	public string textmax;
 	//問題の難易度
 	public static double Q1_1dif=0.310;
@@ -15,16 +14,7 @@ public class IRT_b: MonoBehaviour {
 	public static double Q4_1dif=-1.956;
 	public static double Q4_2dif=-0.213;
 	public static double Q5dif=3.423;
-	//問題の識別度
-	public static double Q1_1se=0.247;
-	public static double Q1_2se=0.241;
-	public static double Q2_1se=0.245;
-	public static double Q2_2se=0.246;
-	public static double Q3_1se=0.239;
-	public static double Q3_2se=0.257;
-	public static double Q4_1se=0.287;
-	public static double Q4_2se=0.240;
-	public static double Q5se=0.443;
+
 	//1PLのICC計算(正答確率）
 	public static float Q1_1icct;
 	public static double Q1_2icct;
@@ -87,10 +77,8 @@ public class IRT_b: MonoBehaviour {
 			max=Mathf.Max((float)max,(float)MLE);
 			maxLevel=Mathf.Max((float)maxLevel,(float)i);
 			}
-			Debug.Log (MLE);
-			Debug.Log (i);
 	}
-		textmax = maxLevel.ToString ();
-		maxIRT.text = textmax;
+		IRTforUser.selectdif=7;
+		IRTforUser.result = max;
 		Debug.Log (max);
 	}}

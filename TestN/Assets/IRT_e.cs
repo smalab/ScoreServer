@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class IRT_e: MonoBehaviour {
-	public Text maxIRT;
 	public string textmax;
 	//問題の難易度
 	public static double Q1_1dif=-2.425;
@@ -110,13 +109,10 @@ public class IRT_e: MonoBehaviour {
 			if(MLE>max){
 				max=Mathf.Max((float)max,(float)MLE);
 				maxLevel=i;
-	
 
 			}
-				Debug.Log (MLE);
-			Debug.Log (i);
 		}
-		textmax = maxLevel.ToString ();
-		maxIRT.text = textmax;
+		IRTforUser.selectdif=12;
+		IRTforUser.result = max;
 		Debug.Log (max);
 	}}
