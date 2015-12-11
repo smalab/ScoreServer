@@ -78,7 +78,7 @@ public class IRT_h: MonoBehaviour {
 				maxLevel=Mathf.Max((float)maxLevel,(float)i);
 			}
 		}
-		IRTforUser.result = max;
+		IRTforUser.result = maxLevel;
 		IRTforUser.selectdif=18;
 		Debug.Log (max);
 	}}

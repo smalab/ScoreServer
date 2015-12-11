@@ -113,6 +113,6 @@ public class IRT_e: MonoBehaviour {
 			}
 		}
 		IRTforUser.selectdif=12;
-		IRTforUser.result = max;
+		IRTforUser.result =maxLevel;
 		Debug.Log (max);
 	}}
