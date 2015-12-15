@@ -5,26 +5,26 @@ using System.Collections;
 public class IRT_b: MonoBehaviour {
 	public string textmax;
 	//問題の難易度
-	public static double Q1_1dif=0.310;
-	public static double Q1_2dif=-0.723;
-	public static double Q2_1dif=-0.985;
-	public static double Q2_2dif=0.256;
-	public static double Q3_1dif=-0.519;
-	public static double Q3_2dif=0.704;
-	public static double Q4_1dif=-1.956;
-	public static double Q4_2dif=-0.213;
-	public static double Q5dif=3.423;
+	public static double Q1_1dif=0.511;
+	public static double Q1_2dif=-0.556;
+	public static double Q2_1dif=-0.746;
+	public static double Q2_2dif=0.358;
+	public static double Q3_1dif=-0.415;
+	public static double Q3_2dif=0.779;
+	public static double Q4_1dif=-2.075;
+	public static double Q4_2dif=-0.083;
+	public static double Q5dif=3.352;
 
 	//1PLのICC計算(正答確率）
-	public static float Q1_1icct;
-	public static double Q1_2icct;
-	public static double Q2_1icct;
-	public static double Q2_2icct;
-	public static double Q3_1icct;
-	public static double Q3_2icct;
-	public static double Q4_1icct;
-	public static double Q4_2icct;
-	public static double Q5icct;
+	public static double Q1_1icct=0.242;
+	public static double Q1_2icct=0.231;
+	public static double Q2_1icct=0.232;
+	public static double Q2_2icct=0.238;
+	public static double Q3_1icct=0.230;
+	public static double Q3_2icct=0.249;
+	public static double Q4_1icct=0.282;
+	public static double Q4_2icct=0.232;
+	public static double Q5icct=0.417;
 
 	//最大尤度
 	public static double max=-5;

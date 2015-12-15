@@ -16,15 +16,15 @@ public class IRT_h: MonoBehaviour {
 	public static double Q5dif=2.006;
 
 	//1PLのICC計算(正答確率）
-	public static float Q1_1icct;
-	public static double Q1_2icct;
-	public static double Q2_1icct;
-	public static double Q2_2icct;
-	public static double Q3_1icct;
-	public static double Q3_2icct;
-	public static double Q4_1icct;
-	public static double Q4_2icct;
-	public static double Q5icct;
+	public static double Q1_1icct=0.458;
+	public static double Q1_2icct=0.443;
+	public static double Q2_1icct=0.424;
+	public static double Q2_2icct=0.422;
+	public static double Q3_1icct=0.464;
+	public static double Q3_2icct=0.425;
+	public static double Q4_1icct=0.430;
+	public static double Q4_2icct=0.423;
+	public static double Q5icct=0.532;
 	
 	//最大尤度
 	public static double max=0;
