@@ -32,10 +32,6 @@ public class getIRT_h : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
-
-	public void pushIRT(){
 		NCMBObject pushIRT = new NCMBObject ("TestClass");
 		
 		pushIRT["message"] = "IRT_ｈ";
@@ -45,4 +41,6 @@ public class getIRT_h : MonoBehaviour {
 		pushIRT.SaveAsync ();
 
 	}
+
+
 }
