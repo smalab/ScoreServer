@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
+using System.Threading;
+using NCMB;
+using System.Collections.Generic;
 public class showans_e : MonoBehaviour {
 	public Text rltQ1_1;
 	public Text rltQ1_2;
@@ -34,6 +36,7 @@ public class showans_e : MonoBehaviour {
 
 	void Start()
 	{
+		NCMBObject pushIRT = new NCMBObject ("result_E");
 		playername = textsave.player;
 		TotalResult.totalQ=12;
 		name.text = playername;
@@ -137,6 +140,19 @@ public class showans_e : MonoBehaviour {
 		rltQ3_1.text = ResQ3_1;
 		rltQ4_1.text = ResQ4_1;
 
-
+		pushIRT["name"] = textsave.player;
+		pushIRT["1"] = AnsQ1_e.q1;
+		pushIRT["2"] = AnsQ1_e.q2;
+		pushIRT["3"] = AnsQ1_e.q3;
+		pushIRT["4"] = AnsQ1_e.q4;
+		pushIRT["5"] = AnsQ1_e.q5;
+		pushIRT["6"] = AnsQ2_e.q1;
+		pushIRT["7"] = AnsQ2_e.q2;
+		pushIRT["8"] = AnsQ2_e.q3;
+		pushIRT["9"] = AnsQ2_e.q4;
+		pushIRT["10"] = AnsQ3_e.q1;
+		pushIRT["11"] = AnsQ3_e.q2;
+		pushIRT["12"] = AnsQ4_e.q;
+		pushIRT.SaveAsync ();
 	}
 	}

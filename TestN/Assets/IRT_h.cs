@@ -5,18 +5,17 @@ using System.Collections;
 public class IRT_h: MonoBehaviour {
 	public string textmax;
 	//問題の難易度
-	public static double Q1_1dif=1.155;
-	public static double Q1_2dif=-0.996;
-	public static double Q2_1dif=-0.335;
-	public static double Q2_2dif=-0.176;
-	public static double Q3_1dif=-1.359;
-	public static double Q3_2dif=0.302;
-	public static double Q4_1dif=-0.658;
-	public static double Q4_2dif=0.142;
-	public static double Q5dif=2.006;
-
+	public static double Q1_1dif;
+	public static double Q1_2dif;
+	public static double Q2_1dif;
+	public static double Q2_2dif;
+	public static double Q3_1dif;
+	public static double Q3_2dif;
+	public static double Q4_1dif;
+	public static double Q4_2dif;
+	public static double Q5dif;
 	//1PLのICC計算(正答確率）
-	public static float Q1_1icct;
+	public static double Q1_1icct;
 	public static double Q1_2icct;
 	public static double Q2_1icct;
 	public static double Q2_2icct;
@@ -32,9 +31,9 @@ public class IRT_h: MonoBehaviour {
 	//最大尤度推定用変数
 	public static double MLE;
 	void Start(){
-		
+
 		for (double i=-5.0; i<=5.0; i=i+0.1) {
-			
+
 			Q1_1icct=1/(1+Mathf.Pow(Mathf.PI,(float)(-1*(i-Q1_1dif))));
 			if(AnsQ1_h.q1 != 1){
 				Q1_1icct=1-Q1_1icct;
