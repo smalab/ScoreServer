@@ -28,76 +28,78 @@ public class showans_h : MonoBehaviour {
 	public string ResQ4_1;
 	public string ResQ4_2;
 	public string ResQ5_1;
+	public static int AnsCount=0;
+	public static int flag=0;
 	
 	void Start()
 	{
 		NCMBObject pushIRT = new NCMBObject ("result_H");
 		playername = textsave.player;
-		TotalResult.totalQ=9;
+		TotalResult.totalQ = 9;
 		name.text = playername;
 		if (textsave.glade == 0) {
-			glade.text="１年生";
+			glade.text = "１年生";
 		}
 		if (textsave.glade == 1) {
-			glade.text="２年生";
+			glade.text = "２年生";
 		}
 		if (textsave.glade == 2) {
-			glade.text="３年生";
+			glade.text = "３年生";
 		}
 		if (textsave.glade == 3) {
-			glade.text="４年生";
+			glade.text = "４年生";
 		}
-		if (AnsQ1_h.q1 == 1){
+		if (AnsQ1_h.q1 == 1) {
 			ResQ1_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ1_1 = "×";
 		}
 		if (AnsQ1_h.q2 == 1) {
 			ResQ1_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ1_2 = "×";
 		}
 		if (AnsQ2_h.q1 == 1) {
 			ResQ2_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ2_1 = "×";
 		}
 		if (AnsQ2_h.q2 == 1) {
 			ResQ2_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ2_2 = "×";
 		}
 		if (AnsQ3_h.q1 == 1) {
 			ResQ3_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ3_1 = "×";
 		}
 		if (AnsQ3_h.q2 == 1) {
 			ResQ3_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ3_2 = "×";
 		}
 		if (AnsQ4_h.q1 == 1) {
 			ResQ4_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ4_1 = "×";
 		}
 		if (AnsQ4_h.q2 == 1) {
 			ResQ4_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ4_2 = "×";
 		}
 		if (AnsQ5_h.q == 1) {
 			ResQ5_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ5_1 = "×";
 		}
@@ -112,16 +114,20 @@ public class showans_h : MonoBehaviour {
 		rltQ4_2.text = ResQ4_2;
 		rltQ5_1.text = ResQ5_1;
 
-		pushIRT["name"] = textsave.player;
-		pushIRT["1"] = AnsQ1_h.q1;
-		pushIRT["2"] = AnsQ1_h.q2;
-		pushIRT["3"] = AnsQ2_h.q1;
-		pushIRT["4"] = AnsQ2_h.q2;
-		pushIRT["5"] = AnsQ3_h.q1;
-		pushIRT["6"] = AnsQ3_h.q2;
-		pushIRT["7"] = AnsQ4_h.q1;
-		pushIRT["8"] = AnsQ4_h.q2;
-		pushIRT["9"] = AnsQ5_h.q;
+		pushIRT ["name"] = textsave.player;
+		pushIRT ["1"] = AnsQ1_h.q1;
+		pushIRT ["2"] = AnsQ1_h.q2;
+		pushIRT ["3"] = AnsQ2_h.q1;
+		pushIRT ["4"] = AnsQ2_h.q2;
+		pushIRT ["5"] = AnsQ3_h.q1;
+		pushIRT ["6"] = AnsQ3_h.q2;
+		pushIRT ["7"] = AnsQ4_h.q1;
+		pushIRT ["8"] = AnsQ4_h.q2;
+		pushIRT ["9"] = AnsQ5_h.q;
 		pushIRT.SaveAsync ();
+		if (flag == 0) {
+			TotalResult.T_ans = AnsCount;
+			flag = 1;
+		}
 	}
 }

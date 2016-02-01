@@ -4,6 +4,7 @@ using System.Collections;
 using System.Threading;
 using NCMB;
 using System.Collections.Generic;
+
 public class showans_e : MonoBehaviour {
 	public Text rltQ1_1;
 	public Text rltQ1_2;
@@ -33,10 +34,11 @@ public class showans_e : MonoBehaviour {
 	public string ResQ2_1;
 	public string ResQ3_1;
 	public string ResQ4_1;
-
+	public static int AnsCount=0;
+	public static int flag=0;
 	void Start()
 	{
-		NCMBObject pushIRT = new NCMBObject ("result_E");
+
 		playername = textsave.player;
 		TotalResult.totalQ=12;
 		name.text = playername;
@@ -52,79 +54,41 @@ public class showans_e : MonoBehaviour {
 		if (textsave.glade == 4) {
 			glade.text="４年生";
 		}
-		if (AnsQ1_e.q1 == 1) {
-
-			ResQ1_1 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_1 = "×";
+		if (AnsQ1_e.q1 == 1) {	ResQ1_1 = "〇"; AnsCount++;
+		} else {        		ResQ1_1 = "×";
 		}
-		if (AnsQ1_e.q2 == 1) {
-			ResQ1_2 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_2 = "×";
+		if (AnsQ1_e.q2 == 1) {	ResQ1_2 = "〇"; AnsCount++;
+		} else {         		ResQ1_2 = "×";
 		}
-		if (AnsQ1_e.q3 == 1) {
-			ResQ1_3 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_3 = "×";
+		if (AnsQ1_e.q3 == 1) {	ResQ1_3 = "〇"; AnsCount++;
+		} else {            	ResQ1_3 = "×";
 		}
-		if (AnsQ1_e.q4 == 1) {
-			ResQ1_4 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_4 = "×";
+		if (AnsQ1_e.q4 == 1) {	ResQ1_4 = "〇"; AnsCount++;
+		} else {	     		ResQ1_4 = "×";
 		}
-		if (AnsQ1_e.q5 == 1) {
-			ResQ1_5 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_5 = "×";
+		if (AnsQ1_e.q5 == 1) {  ResQ1_5 = "〇"; AnsCount++;
+		} else {			    ResQ1_5 = "×";
 		}
-
-		if (AnsQ2_e.q1 == 1) {
-			ResQ1_6 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_6 = "×";
+		if (AnsQ2_e.q1 == 1) {	ResQ1_6 = "〇"; AnsCount++;
+		} else {			    ResQ1_6 = "×";
 		}
-		if (AnsQ2_e.q2 == 1) {
-			ResQ1_7 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_7 = "×";
+		if (AnsQ2_e.q2 == 1) {	ResQ1_7 = "〇"; AnsCount++;
+		} else {			    ResQ1_7 = "×";
 		}
-		if (AnsQ2_e.q3 == 1) {
-			ResQ1_8 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_8 = "×";
+		if (AnsQ2_e.q3 == 1) {	ResQ1_8 = "〇"; AnsCount++;
+		} else {		    	ResQ1_8 = "×";
 		}
-		if (AnsQ2_e.q4 == 1) {
-			ResQ1_9 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ1_9 = "×";
+		if (AnsQ2_e.q4 == 1) {	ResQ1_9 = "〇"; AnsCount++;
+		} else {            	ResQ1_9 = "×";
 		}
-		if (AnsQ3_e.q1 == 1) {
-			ResQ2_1 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ2_1 = "×";
+		if (AnsQ3_e.q1 == 1) {	ResQ2_1 = "〇"; AnsCount++;
+		} else {         		ResQ2_1 = "×";
 		}
-		if (AnsQ3_e.q2 == 1) {
-			ResQ3_1 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ3_1 = "×";
+		if (AnsQ3_e.q2 == 1) {	ResQ3_1 = "〇"; AnsCount++;
+		} else {            	ResQ3_1 = "×";
 		}
-		if (AnsQ4_e.q == 1) {
-			ResQ4_1 = "〇";
-			TotalResult.T_ans++;
-		} else {
-			ResQ4_1 = "×";
+		if (AnsQ4_e.q == 1) {	ResQ4_1 = "〇"; AnsCount++;
+		} else {            	ResQ4_1 = "×";
 		}
 
 		rltQ1_1.text = ResQ1_1;
@@ -140,6 +104,7 @@ public class showans_e : MonoBehaviour {
 		rltQ3_1.text = ResQ3_1;
 		rltQ4_1.text = ResQ4_1;
 
+		NCMBObject pushIRT = new NCMBObject ("result_E");
 		pushIRT["name"] = textsave.player;
 		pushIRT["1"] = AnsQ1_e.q1;
 		pushIRT["2"] = AnsQ1_e.q2;
@@ -154,5 +119,9 @@ public class showans_e : MonoBehaviour {
 		pushIRT["11"] = AnsQ3_e.q2;
 		pushIRT["12"] = AnsQ4_e.q;
 		pushIRT.SaveAsync ();
+		if (flag == 0) {
+			TotalResult.T_ans = AnsCount;
+			flag = 1;
+		}
 	}
 	}

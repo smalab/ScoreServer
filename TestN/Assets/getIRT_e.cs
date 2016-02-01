@@ -34,13 +34,14 @@ public class getIRT_e : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		NCMBObject pushIRT = new NCMBObject ("TestClass");
-		
 		pushIRT["message"] = "IRT_e";
 		pushIRT["name"] = textsave.player;
 		pushIRT["glade"] = textsave.glade;
 		pushIRT ["IRT"] = IRT_e.maxLevel;
 		pushIRT.SaveAsync ();
+
 	}
 
 }

@@ -28,7 +28,8 @@ public class showans_b : MonoBehaviour {
 	public string ResQ4_1;
 	public string ResQ4_2;
 	public string ResQ5_1;
-	
+	public static int AnsCount=0;
+	public static int flag=0;
 	void Start()
 	{
 		NCMBObject pushIRT = new NCMBObject ("result_B");
@@ -50,55 +51,55 @@ public class showans_b : MonoBehaviour {
 		}
 		if (AnsQ1.q1 == 1){
 			ResQ1_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ1_1 = "×";
 		}
 		if (AnsQ1.q2 == 1) {
 			ResQ1_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ1_2 = "×";
 		}
 		if (AnsQ2.q1 == 1) {
 			ResQ2_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ2_1 = "×";
 		}
 		if (AnsQ2.q2 == 1) {
 			ResQ2_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ2_2 = "×";
 		}
 		if (AnsQ3.q1 == 1) {
 			ResQ3_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ3_1 = "×";
 		}
 		if (AnsQ3.q2 == 1) {
 			ResQ3_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ3_2 = "×";
 		}
 		if (AnsQ4.q1 == 1) {
 			ResQ4_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ4_1 = "×";
 		}
 		if (AnsQ4.q2 == 1) {
 			ResQ4_2 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ4_2 = "×";
 		}
 		if (AnsQ5.q5Ans == 1) {
 			ResQ5_1 = "〇";
-			TotalResult.T_ans++;
+			AnsCount++;
 		} else {
 			ResQ5_1 = "×";
 		}
@@ -124,7 +125,9 @@ public class showans_b : MonoBehaviour {
 		pushIRT["8"] = AnsQ4.q2;
 		pushIRT["9"] = AnsQ5.q5Ans;
 		pushIRT.SaveAsync ();
-
-	}
+		if (flag == 0) {
+			TotalResult.T_ans = AnsCount;
+			flag = 1;
+		}}
 
 }
