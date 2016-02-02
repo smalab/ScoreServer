@@ -5,9 +5,9 @@ using NCMB;
 using System.Collections.Generic;
 
 public class getIRT_b : MonoBehaviour {
-
+	public static int flag=0;
 	// Use this for initialization
-	void Start () {
+	public void push() {
 			NCMBObject pullIRT = new NCMBObject ("StartIRT");
 		pullIRT.ObjectId = "4nUEe8T0pKe2KLUI";
 			pullIRT.FetchAsync ((NCMBException e) => {
@@ -33,14 +33,15 @@ public class getIRT_b : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		NCMBObject pushIRT = new NCMBObject ("TestClass");
-		
-		pushIRT["message"] = "IRT_b";
-		pushIRT["name"] = textsave.player;
-		pushIRT["glade"] = textsave.glade;
-		pushIRT ["IRT"] = IRT_b.maxLevel;
-		pushIRT.SaveAsync ();
-
+		if (flag == 0) {
+			NCMBObject pushIRT = new NCMBObject ("TestClass");
+			pushIRT ["message"] = "IRT_b";
+			pushIRT ["name"] = textsave.player;
+			pushIRT ["glade"] = textsave.glade;
+			pushIRT ["IRT"] = IRT_b.maxLevel;
+			pushIRT.SaveAsync ();
+			flag=1;
+		}
 	}
 
 }

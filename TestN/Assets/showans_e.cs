@@ -104,6 +104,7 @@ public class showans_e : MonoBehaviour {
 		rltQ3_1.text = ResQ3_1;
 		rltQ4_1.text = ResQ4_1;
 
+		if (flag == 0) {
 		NCMBObject pushIRT = new NCMBObject ("result_E");
 		pushIRT["name"] = textsave.player;
 		pushIRT["1"] = AnsQ1_e.q1;
@@ -119,7 +120,6 @@ public class showans_e : MonoBehaviour {
 		pushIRT["11"] = AnsQ3_e.q2;
 		pushIRT["12"] = AnsQ4_e.q;
 		pushIRT.SaveAsync ();
-		if (flag == 0) {
 			TotalResult.T_ans = AnsCount;
 			flag = 1;
 		}
