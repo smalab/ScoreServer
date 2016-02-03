@@ -113,21 +113,22 @@ public class showans_b : MonoBehaviour {
 		rltQ4_1.text = ResQ4_1;
 		rltQ4_2.text = ResQ4_2;
 		rltQ5_1.text = ResQ5_1;
-		if (flag == 0) {
-		NCMBObject pushIRT = new NCMBObject ("result_B");
-		pushIRT["name"] = textsave.player;
-		pushIRT["1"] = AnsQ1.q1;
-		pushIRT["2"] = AnsQ1.q2;
-		pushIRT["3"] = AnsQ2.q1;
-		pushIRT["4"] = AnsQ2.q2;
-		pushIRT["5"] = AnsQ3.q1;
-		pushIRT["6"] = AnsQ3.q2;
-		pushIRT["7"] = AnsQ4.q1;
-		pushIRT["8"] = AnsQ4.q2;
-		pushIRT["9"] = AnsQ5.q5Ans;
-		pushIRT.SaveAsync ();
-		TotalResult.T_ans = AnsCount;
-			flag = 1;
-		}}
+		//	if (flag == 0) {
+		//	NCMBObject pushIRT = new NCMBObject ("result_B");
+		//	pushIRT["name"] = textsave.player;
+		//	pushIRT["1"] = AnsQ1.q1;
+		//	pushIRT["2"] = AnsQ1.q2;
+		//	pushIRT["3"] = AnsQ2.q1;
+		//	pushIRT["4"] = AnsQ2.q2;
+		//		pushIRT["5"] = AnsQ3.q1;
+		//	pushIRT["6"] = AnsQ3.q2;
+		//		pushIRT["7"] = AnsQ4.q1;
+		//		pushIRT["8"] = AnsQ4.q2;
+		//	pushIRT["9"] = AnsQ5.q5Ans;
+		//		pushIRT.SaveAsync ();
+		//		TotalResult.T_ans = AnsCount;
+		//			flag = 1;
+		//}
+	}
 
 }

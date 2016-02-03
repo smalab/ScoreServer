@@ -15,7 +15,6 @@ public class getIRT_e : MonoBehaviour {
 				//検索失敗時の処理
 			} else {
 			}
-			
 		});
 		Thread.Sleep (1500);
 		IRT_e.Q1_1dif = (double)pullIRT["dif1"];
@@ -34,7 +33,7 @@ public class getIRT_e : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (flag == 0) {
+			if (flag == 0) {
 			NCMBObject pushIRT = new NCMBObject ("TestClass");
 			pushIRT ["message"] = "IRT_e";
 			pushIRT ["name"] = textsave.player;

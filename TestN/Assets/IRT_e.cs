@@ -5,18 +5,18 @@ using System.Collections;
 public class IRT_e: MonoBehaviour {
 	public string textmax;
 	//問題の難易度
-	public static double Q1_1dif;
-	public static double Q1_2dif;
-	public static double Q1_3dif;
-	public static double Q1_4dif;
-	public static double Q1_5dif;
-	public static double Q1_6dif;
-	public static double Q1_7dif;
-	public static double Q1_8dif;
-	public static double Q1_9dif;
-	public static double Q2_1dif;
-	public static double Q3_1dif;
-	public static double Q4_1dif;
+	public static double Q1_1dif=-2.425;
+	public static double Q1_2dif=-2.425;
+	public static double Q1_3dif=-1.664;
+	public static double Q1_4dif=-2.831;
+	public static double Q1_5dif=-2.425;
+	public static double Q1_6dif=-0.531;
+	public static double Q1_7dif=-2.831;
+	public static double Q1_8dif=-0.849;
+	public static double Q1_9dif=-2.831;
+	public static double Q2_1dif=0.784;
+	public static double Q3_1dif=-1.414;
+	public static double Q4_1dif=0.548;
 	//1PLのICC計算(正答確率）
 	public static double Q1_1icct;
 	public static double Q1_2icct;
